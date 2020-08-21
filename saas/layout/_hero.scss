@@ -1,0 +1,60 @@
+/* Hero section*/
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: 30px 0;
+}
+.hero-bg {
+  max-width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../img/hero/bg.jpg');
+  background-color: $black-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-text {
+  display: flex;
+  padding: 189px 0;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.blue-btn {
+  background: $blue-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-color;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  &-hero {
+    &:hover {
+      background: $blue-hover-color;
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+    }
+  }
+}

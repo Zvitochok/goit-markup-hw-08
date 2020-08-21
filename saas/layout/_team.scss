@@ -1,0 +1,81 @@
+/*Наша команда*/
+
+.our-team {
+  width: 1170px;
+  margin: 0 auto;
+  &-background {
+    background-color: #f5f4fa;
+    padding: 94px 0 94px 0;
+  }
+}
+.our-team-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.our-team-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  li {
+    background: $white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.our-teame-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black-color;
+}
+.our-team-position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $dark-grey-color;
+}
+.social-icons {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.social-icons li {
+  box-shadow: none;
+}
+.social-icons li:not(:last-child) {
+  margin: 0 10px 24px 0;
+}
+.social-icons li a {
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+.social-icons li a:hover,
+.social-icons li a:focus {
+  background: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.social-icons,
+.social-icons-team li a svg {
+  fill: #afb1b8;
+}
+
+.social-icons li a:hover svg,
+.social-icons li a:focus svg {
+  fill: $white-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}

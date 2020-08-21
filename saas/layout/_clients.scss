@@ -1,0 +1,43 @@
+/*Клиенты*/
+.clients {
+  padding: 94px 0 94px 0;
+
+  &-list {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.clients-list li a {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+}
+.clients-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list li a svg {
+  fill: #afb1b8;
+}
+
+.clients-list li a:hover svg,
+.clients-list li a:focus svg {
+  fill: $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.clients-list li a:hover,
+.clients-list li a:focus {
+  border: 1px solid $blue-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
