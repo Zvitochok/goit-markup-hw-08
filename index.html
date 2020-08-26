@@ -13,15 +13,17 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <a class="logo" href="./index.html" lang="en" aria-label="Логотип">
-          <span class="logo-blue">Web</span>Studio
+          <svg width="141" height="28">
+            <use class="logo" href="./img/sprite.svg#logo"></use>
+          </svg>
         </a>
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-wrapper">
          
           <svg width="40" height="40"> 
             <use class="icon-burger" href="./img/sprite.svg#burger"></use>
-            <use class="icon-close" href="./img/sprite.svg#close-mob-vers"</use>
+            <use class="icon-close" href="./img/sprite.svg#close-mob-vers"></use>
         </svg>
         </button>
         <div class="menu-wrapper">

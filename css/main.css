@@ -339,8 +339,73 @@ a:focus {
 }
 
 /* HEADER*/
-.menu-wrapper {
+.header {
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: coral;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-close {
   display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: darkcyan;
+  left: 0;
+}
+
+.navigation {
+  padding-top: 60px;
+  padding-bottom: 178px;
+}
+
+.header-adress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+  flex-direction: column;
+}
+
+.header-adress a {
+  text-decoration: none;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  z-index: 100;
+  padding: 8px;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navigation-list-item a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #212121;
 }
 
 /*Портфоло*/
