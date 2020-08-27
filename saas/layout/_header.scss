@@ -1,10 +1,27 @@
 /* HEADER*/
+@keyframes zoomInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
 
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
 .header {
   position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
-background-color: coral;
+background-color: #fff;
+
 
 
 }
@@ -12,22 +29,31 @@ background-color: coral;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  border-bottom: 1px solid #ECECEC;
+  width: 100%;
 }
 .icon-close{
   display: none;;
 }
 
 .menu-wrapper {
+  display: none;
   position: absolute;
   top: 100%;
   width: 100%;
-  background-color: darkcyan;
+  background-color: #fff;
   left: 0;
+  
+    &.is-open{
+      animation-name: zoomInDown;
+      animation-duration: 250ms;
+      display: block;
+    }
 }
+
 .navigation{
   padding-top: 60px;
-  padding-bottom: 178px;
+ 
  
 }
 .header-adress {
@@ -46,6 +72,14 @@ background-color: coral;
   position: relative;
   z-index: 100;
   padding: 8px;
+  &.is-open{
+    .icon-close{
+      display: block;
+    }
+    .icon-burger{
+      display: none;
+    }
+  }
 }
 .navigation-list{
   list-style: none;
@@ -56,16 +90,27 @@ background-color: coral;
   &-item {
     a{
       text-decoration: none;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
+       font-weight: 500;
       font-size: 18px;
-      line-height: 21px;
+      line-height: 1.167;
       letter-spacing: 0.02em;
       color: #212121;
+      
     }
   }
 }
+.navigation-list-item:not(:last-child){
+  margin-bottom: 40px;
+}
+.link{
+font-weight: 500;
+font-size: 18px;
+line-height: 1.167;
+letter-spacing: 0.02em;
+color: #757575;
+margin-top: 60px;
+}
+
 
 
 // .header .container {
