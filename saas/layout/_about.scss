@@ -51,3 +51,33 @@ h2 {
   letter-spacing: 0.03em;
   color: $dark-grey-color;
 }
+@media screen and (max-width: 767px){
+  .about-us-list{
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      width: 450px;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 768px){
+  .about-us-list{
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    flex-flow: wrap;
+    
+    li {
+      width: 354px;
+      &:nth-child(2n-1){
+        margin-right: 30px;
+      }
+    }
+  }
+  
+}
