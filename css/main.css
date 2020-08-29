@@ -687,6 +687,46 @@ h1 {
   transition-duration: 250ms;
 }
 
+@media screen and (max-width: 767px) {
+  .hero-bg {
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/hero/bg.jpg");
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-bg {
+    padding: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+    background-image: url("/img/hero/mobile@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text {
+    display: flex;
+    padding: 189px 0;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}
+
 /* О нас*/
 h2 {
   font-style: normal;
