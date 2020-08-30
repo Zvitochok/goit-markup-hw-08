@@ -730,7 +730,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx), screen and (max-width: 767px) and (min-width: 320px) {
   .hero-bg {
     padding: 0;
     width: 100%;
@@ -759,7 +759,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-width: 768px) {
   .hero-bg {
     padding: 0;
     width: 100%;
@@ -840,7 +840,7 @@ h2 {
     align-items: center;
   }
   .about-us-list li {
-    width: 450px;
+    width: 100%;
   }
 }
 
@@ -908,6 +908,24 @@ h2 {
 
 .services-list li:not(:last-child) {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+  }
 }
 
 /*Наша команда*/
@@ -998,6 +1016,57 @@ h2 {
   fill: #fff;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
+}
+
+@media screen and (max-width: 767px) {
+  .our-team {
+    width: 100%;
+  }
+  .our-team.background {
+    width: 480px;
+    height: 2791px;
+  }
+  .our-team-list {
+    width: 100%;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-team-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .our-team-list img {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .social-icons-team li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team {
+    width: 100%;
+  }
+  .our-team-list {
+    list-style: none;
+    flex-flow: wrap;
+  }
+  .our-team-list > li {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+  .our-team-list > li:not(:last-child) {
+    margin-right: 0px;
+  }
+  .our-team-list > li:nth-child(2n-1) {
+    margin-right: 30px;
+  }
 }
 
 /*Клиенты*/
