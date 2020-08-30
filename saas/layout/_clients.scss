@@ -41,58 +41,55 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
- 
-  
-@media screen and (min-width: 768px){
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
   .clients-list {
     flex-flow: wrap;
     li {
       margin-bottom: 30px;
       margin-right: 30px;
-     a {
-      width: 226px;
-      height: 90px;
-     }
+      a {
+        width: 226px;
+        height: 90px;
+      }
     }
 
-    & li:nth-child(2n+2){
+    & li:nth-child(2n + 2) {
       margin-right: 30px;
     }
-    & li:nth-child(3n){
+    & li:nth-child(3n) {
       margin-right: 0px;
     }
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .clients-list {
     flex-flow: wrap;
     li {
       margin-bottom: 30px;
-     a {
-      width: 210px;
-      height: 90px;
-     }
+      a {
+        width: 210px;
+        height: 90px;
+      }
     }
-    
-    & li:not(:last-child){
+
+    & li:not(:last-child) {
       margin-right: 0px;
     }
-    & li:nth-child(2n-1){
+    & li:nth-child(2n-1) {
       margin-right: 30px;
     }
   }
 }
 
-
-@media screen and (max-width: 479px){
-  .clients-list{
+@media screen and (max-width: 479px) {
+  .clients-list {
     flex-direction: column;
   }
   .clients-list li {
+    margin-right: 0px;
+    &:nth-child(2n-1) {
       margin-right: 0px;
-      &:nth-child(2n-1){
-        margin-right: 0px;
-      }
     }
-  
+  }
 }

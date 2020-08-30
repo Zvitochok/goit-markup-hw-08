@@ -51,8 +51,8 @@ h2 {
   letter-spacing: 0.03em;
   color: $dark-grey-color;
 }
-@media screen and (max-width: 767px){
-  .about-us-list{
+@media screen and (max-width: 767px) {
+  .about-us-list {
     list-style: none;
     flex-direction: column;
     justify-content: center;
@@ -61,23 +61,21 @@ h2 {
       width: 100%;
     }
   }
-  
 }
 
-@media screen and (min-width: 768px){
-  .about-us-list{
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .about-us-list {
     list-style: none;
     flex-direction: row;
     justify-content: center;
     align-items: end;
     flex-flow: wrap;
-    
+
     li {
       width: 354px;
-      &:nth-child(2n-1){
+      &:nth-child(2n-1) {
         margin-right: 30px;
       }
     }
   }
-  
 }
