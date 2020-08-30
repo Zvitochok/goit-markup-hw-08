@@ -182,55 +182,55 @@ color: #757575;
   
 }
 
-// .header .container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   border-bottom: 1px solid #ececec;
-// }
-// .navigation {
-//   display: flex;
-//   align-items: center;
-// }
-// .navigation-list {
-//   display: flex;
-//   margin-bottom: 0;
-// }
-// .navigation-list-item:not(:last-child) {
-//   margin-right: 50px;
-// }
-// .logo,
-// .logo:hover,
-// .logo:focus {
-//   font-family: $secondary-font;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   color: #000000;
-//   text-decoration: none;
-//   margin-right: 85px;
-// }
-// .logo-blue {
-//   font-family: $secondary-font;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   color: $blue-color;
-// }
-// .logo-footer {
-//   margin-bottom: 20px;
-// }
-// .logo-footer,
-// .logo-footer:hover,
-// .logo-footer:focus {
-//   color: $white-color;
-//   transition: cubic-bezier(0.4, 0, 0.2, 1);
-//   transition-duration: 250ms;
-// }
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  margin-bottom: 0;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.logo,
+.logo:hover,
+.logo:focus {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 85px;
+}
+.logo-blue {
+  font-family: $secondary-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $blue-color;
+}
+.logo-footer {
+  margin-bottom: 20px;
+}
+.logo-footer,
+.logo-footer:hover,
+.logo-footer:focus {
+  color: $white-color;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
 
 // .link {
 //   text-decoration: none;

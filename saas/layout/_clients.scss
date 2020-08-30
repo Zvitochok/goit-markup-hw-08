@@ -84,7 +84,10 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 479px){
+  .clients-list{
+    flex-direction: column;
+  }
   .clients-list li {
       margin-right: 0px;
       &:nth-child(2n-1){
