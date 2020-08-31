@@ -127,8 +127,29 @@
   }
 }
 @media screen and (max-width: 767px) {
+  
   .portfolio-list {
     list-style: none;
+    flex-flow: wrap;
+    justify-content: center;
+    li{
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0;
+      &:nth-child(2n-1) {
+        margin-right: 0px;
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+      h2{
+        width: auto;
+      }
+      .portfoli-item-text{
+        display: none;
+      }
+    }
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -137,7 +158,18 @@
   }
   .portfolio-list {
     list-style: none;
+    flex-flow: wrap;
+    li{
+      width: 354px;
+      height: auto;
+      margin-bottom: 30px;
+      margin-right: 0;
+      &:nth-child(2n-1) {
+        margin-right: 30px;
+    }
+    }
   }
+  
 }
 @media screen and (max-width: 479px) {
   .portfolio-list {

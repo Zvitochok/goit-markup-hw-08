@@ -865,6 +865,26 @@ a:focus {
 @media screen and (max-width: 767px) {
   .portfolio-list {
     list-style: none;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  .portfolio-list li {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .portfolio-list li:nth-child(2n-1) {
+    margin-right: 0px;
+  }
+  .portfolio-list li img {
+    max-width: 100%;
+    height: auto;
+  }
+  .portfolio-list li h2 {
+    width: auto;
+  }
+  .portfolio-list li .portfoli-item-text {
+    display: none;
   }
 }
 
@@ -874,6 +894,16 @@ a:focus {
   }
   .portfolio-list {
     list-style: none;
+    flex-flow: wrap;
+  }
+  .portfolio-list li {
+    width: 354px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  .portfolio-list li:nth-child(2n-1) {
+    margin-right: 30px;
   }
 }
 
