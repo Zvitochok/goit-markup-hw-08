@@ -13,21 +13,29 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a class="logo" href="./index.html" lang="en" aria-label="Логотип">
-            <span class="logo-blue">Web</span>Studio
-          </a>
+      <div class="container header-container">
+        <a class="logo" href="./index.html" lang="en" aria-label="Логотип">
+          <svg width="141" height="28">
+            <use class="logo" href="./img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+         
+          <svg width="24" height="24"> 
+            <use class="icon-burger" href="./img/sprite.svg#burger"></use>
+            <use class="icon-close" href="./img/sprite.svg#close-mob-vers"></use>
+        </svg>
+        </button>
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./index.html"
+              <a class="active navigation-list-link link" href="./index.html"
                 >Студия</a
               >
             </li>
             <li class="navigation-list-item">
-              <a
-                class="active navigation-list-link link"
-                href="./portfolio.html"
+              <a class="navigation-list-link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -39,18 +47,19 @@
         <div class="header-utils">
           <address class="header-adress">
             <a class="header-email link" href="mailto:info@devstudio.com">
-              <svg width="16" height="11">
+              <svg width="16" height="11" fill='#757575'>
                 <use href="./img/sprite.svg#icon-email-hover"></use>
               </svg>
               info@devstudio.com
             </a>
             <a class="header-tel link" href="tel:+380961111111">
-              <svg width="10" height="15">
+              <svg width="10" height="15" fill='#757575'>
                 <use href="./img/sprite.svg#icon-smartphone"></use>
               </svg>
-              (096) 111-11-11
+              +38 096 111-11-11
             </a>
           </address>
+          </div>
         </div>
       </div>
     </header>
@@ -83,10 +92,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
+                  <picture>
+                      <source srcset="./img/Portfolio_project/desctop/desctop1.jpg 1x, ./img/Portfolio_project/desctop/desctop1_2x.jpg 2x" media="(min-width: 1200px)">
+                      <source srcset="./img/Portfolio_project/tablet/tablet1.jpg 1x, ./img/Portfolio_project/tablet/tablet1_2x.jpg 2x" media="(min-width: 768px)">
+                      <source srcset="./img/Portfolio_project/mobile/mobile1.jpg 1x, ./img/Portfolio_project/mobile/mobile1_2x.jpg 2x" media="(min-width: 320px)">
                   <img
-                    src="./img/Portfolio_project/project_1.svg"
+                  src="./img/Portfolio_project/mobile/mobile1.jpg"
+                  alt="Технокряк"/>
+              </picture>
+                  <!-- <img
+                    src="./img/Portfolio_project/mobile/mobile1.jpg"
                     alt="Технокряк"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Технокряк это современная площадка распространения
@@ -103,10 +120,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop2.jpg 1x, ./img/Portfolio_project/desctop/desctop2_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet2.jpg 1x, ./img/Portfolio_project/tablet/tablet2_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile2.jpg 1x, ./img/Portfolio_project/mobile/mobile2_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile2.jpg"
+                alt="Постер New Orlean vs Golden Star"/>
+                  </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_2.svg"
                     alt="Постер New Orlean vs Golden Star"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -126,10 +151,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop3.jpg 1x, ./img/Portfolio_project/desctop/desctop3_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet3.jpg 1x, ./img/Portfolio_project/tablet/tablet3_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile3.jpg 1x, ./img/Portfolio_project/mobile/mobile3_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile3.jpg"
+                alt="Постер New Orlean vs Golden Star"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_3.svg"
                     alt="Ресторан Seafood"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -149,10 +182,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop4.jpg 1x, ./img/Portfolio_project/desctop/desctop4_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet4.jpg 1x, ./img/Portfolio_project/tablet/tablet4_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile4.jpg 1x, ./img/Portfolio_project/mobile/mobile4_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile4.jpg"
+                alt="Проект Prime"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_4.svg"
                     alt="Проект Prime"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -172,10 +213,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop5.jpg 1x, ./img/Portfolio_project/desctop/desctop5_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet5.jpg 1x, ./img/Portfolio_project/tablet/tablet5_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile5.jpg 1x, ./img/Portfolio_project/mobile/mobile5_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile5.jpg"
+                alt="Проект Boxes"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_5.svg"
                     alt="Проект Boxes"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -196,10 +245,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop6.jpg 1x, ./img/Portfolio_project/desctop/desctop6_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet6.jpg 1x, ./img/Portfolio_project/tablet/tablet6_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile6.jpg 1x, ./img/Portfolio_project/mobile/mobile6_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile6.jpg"
+                alt="Inspiration has no Borders"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_6.svg"
                     alt="Inspiration has no Borders"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -219,10 +276,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop7.jpg 1x, ./img/Portfolio_project/desctop/desctop7_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet7.jpg 1x, ./img/Portfolio_project/tablet/tablet7_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile7.jpg 1x, ./img/Portfolio_project/mobile/mobile7_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile7.jpg"
+                alt="Издание Limited Edition"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_7.svg"
                     alt="Издание Limited Edition"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -242,10 +307,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop8.jpg 1x, ./img/Portfolio_project/desctop/desctop8_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet8.jpg 1x, ./img/Portfolio_project/tablet/tablet8_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile8.jpg 1x, ./img/Portfolio_project/mobile/mobile8_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile8.jpg"
+                alt="Издание Limited Edition"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_8.svg"
                     alt="Проект LAB"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -265,10 +338,18 @@
             <li>
               <a class="portfolio-item" href="">
                 <div class="portfolio-item-img">
-                  <img
+                  <picture>
+                    <source srcset="./img/Portfolio_project/desctop/desctop9.jpg 1x, ./img/Portfolio_project/desctop/desctop9_2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./img/Portfolio_project/tablet/tablet9.jpg 1x, ./img/Portfolio_project/tablet/tablet9_2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./img/Portfolio_project/mobile/mobile9.jpg 1x, ./img/Portfolio_project/mobile/mobile9_2x.jpg 2x" media="(min-width: 320px)">
+                <img
+                src="./img/Portfolio_project/mobile/mobile9.jpg"
+                alt="Growing Business"/>
+            </picture>
+                  <!-- <img
                     src="./img/Portfolio_project/project_9.svg"
                     alt="Growing Business"
-                  />
+                  /> -->
                   <div class="portfoli-item-text">
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -291,76 +372,121 @@
     </main>
     <footer class="footer">
       <div class="footer-wrap">
-        <div class="footer-list">
-          <a class="logo logo-footer" href="/" lang="en"
-            ><span class="logo-blue">Web</span> Studio</a
-          >
-          <address>
-            <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <div class="footer-list">
+            
+            <a class="logo logo-footer" href="/" lang="en"
+              ><span class="logo-blue">Web</span> Studio</a
             >
-            <a class="footer-tel" href="tel:+380961111111">(096) 111-11-11</a>
-          </address>
-        </div>
-        <div>
-          <b class="subscribe">присоединяйтесь</b>
-          <ul class="social-icons social-icons-footer">
-            <li>
-              <a href="" lang="en">
-                <svg width="20" height="20" class="social-icons-link">
-                  <use href="./img/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" lang="en">
-                <svg width="20" height="20">
-                  <use href="./img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" lang="en">
-                <svg width="20" height="20">
-                  <use href="./img/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" lang="en">
-                <svg width="20" height="20">
-                  <use href="./img/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <address>
+              <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
+              <a class="footer-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="footer-tel" href="tel:+380961111111">(096) 111-11-11</a>
+            </address>
+          </div>
+          <div class="social-subscribe">
+            <b class="subscribe">присоединяйтесь</b>
+            <ul class="social-icons social-icons-footer">
+              <li>
+                <a href="" lang="en">
+                  <svg width="20" height="20" class="social-icons-link">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" lang="en">
+                  <svg width="20" height="20">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" lang="en">
+                  <svg width="20" height="20">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" lang="en">
+                  <svg width="20" height="20">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
         <div class="subscribe-form">
           <b class="subscribe-btn">Подпишитесь на рассылку</b>
-          <form action="">
-            <div class="subscribe-email">
-              <input
-                type="text"
-                name="subscribe"
-                id="subscribe-input"
-                class="subscribe-input"
-                placeholder=" "
-                required
-              />
-              <label for="subscribe-input">
-                E-mail
-              </label>
-            </div>
-            <button class="blue-btn">
-              Подписаться
-              <svg width="24" height="24">
-                <use href="./img/sprite.svg#icon-email-footer"></use>
-              </svg>
-            </button>
-          </form>
+            <form action="">
+              <div class="subscribe-email">
+                <input type="text" name="subscribe" id="subscribe-input" class="subscribe-input" placeholder=" " required />
+                 <label for="subscribe-input">
+                   E-mail
+                 </label>
+               </div>
+                  <button class="blue-btn">
+                    Подписаться
+                      <svg width="24" height="24">
+                      <use href="./img/sprite.svg#icon-email-footer"></use>
+                    </svg>
+                  </button>
+             
+            </form>
         </div>
       </div>
-    </footer>
+    </footer> 
+
+    <div data-modal class="backdrop is-hidden">
+      <form action="#" class="modal-form">
+        <div>
+          <button data-modal-close class="modal-close-btn">
+            <svg width="11" height="11" class="close-btn">
+              <use href="./img/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+        </div>
+        <h2 class="modal-form-title">
+          Оставьте свои данные, мы вам перезвоним
+        </h2>
+        <div class="modal-form-input-wrapper">
+          <input type="text" name="user-name" id="user-modal-name" class="modal-form-input" placeholder=" " required/>
+          <label for=user-modal-name" class="modal-form-label">Имя</label>
+          <svg width="12" height="12" class="modal-svg">
+            <use href="./img/sprite.svg#name"></use>
+          </svg>
+        </div>
+        <div class="modal-form-input-wrapper">
+          <input type="tel" name="user-tel"  id="user-modal-tel"  class="modal-form-input" placeholder=" " required/>
+          <label for="user-modal-tel" class="modal-form-label">Телефон</label>
+          <svg width="13" height="13" class="modal-svg">
+            <use href="./img/sprite.svg#tel"></use>
+          </svg>
+        </div>
+        <div class="modal-form-input-wrapper">
+          <input type="email" name="user-email" id="user-modal-email" class="modal-form-input" placeholder=" " required/>
+          <label for="user-modal-email" class="modal-form-label">Почта</label>
+          <svg width="15" height="12" class="modal-svg">
+            <use href="./img/sprite.svg#email"></use>
+          </svg>
+        </div>
+        <div class="modal-form-input-wrapper">
+        <textarea name="user-message" id="user-message" class="modal-form-message" placeholder=" "></textarea>
+        <label for="user-message" class="modal-form-label modal-form-label-message">Коментарий</label>
+        </div>
+        
+        <label class="modal-form-option-lable">
+          <input type="checkbox" name="policy" value="accept-policy" class="modal-form-checkbox"/>
+          <span class="icon"></span>
+          <span class="modal-form-option-span">Соглашаюсь с рассылкой и принимаю<a href="#"> Условия договора</a></span >
+        </label>
+        <button type="submite" class="modal-form-btn">Отправить</button>
+      </form>
+    </div> 
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

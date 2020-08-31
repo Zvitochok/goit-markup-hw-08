@@ -116,3 +116,31 @@
 .portfolio-item:hover .portfoli-item-text {
   top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .button-portfolio-list {
+    justify-content: left;
+    padding: 0;
+    flex-flow: wrap;
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    list-style: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio-list {
+    list-style: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .portfolio-list {
+    list-style: none;
+  }
+}

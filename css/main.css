@@ -435,8 +435,6 @@ a:focus {
   display: flex;
   align-items: center;
   position: relative;
-  display: flex;
-  align-items: center;
   justify-content: center;
   text-decoration-line: none;
   flex-direction: row;
@@ -531,6 +529,13 @@ a:focus {
   transition-duration: 250ms;
 }
 
+@media screen and (max-width: 1199px) {
+  .header-adress {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header-container {
     width: auto;
@@ -597,6 +602,9 @@ a:focus {
   .header-adress .header-email {
     margin-bottom: 16px;
   }
+  .header-adress svg {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -635,9 +643,6 @@ a:focus {
   .header-email {
     margin-bottom: 10px;
   }
-  .header-adress {
-    display: inline-grid;
-  }
   .header-adress a svg {
     margin-right: 8px;
   }
@@ -658,7 +663,7 @@ a:focus {
     list-style: none;
   }
   .header-email {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
   .header-email:hover svg,
   .header-email:focus svg,
@@ -844,6 +849,38 @@ a:focus {
 
 .portfolio-item:hover .portfoli-item-text {
   top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .button-portfolio-list {
+    justify-content: left;
+    padding: 0;
+    flex-flow: wrap;
+  }
+  .button-portfolio-list li {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio-list {
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-list {
+    list-style: none;
+  }
 }
 
 /* Hero section*/
