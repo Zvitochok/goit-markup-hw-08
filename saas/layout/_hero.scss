@@ -127,14 +127,13 @@ h1 {
         url('../img/hero/tablet2x.jpg');
     }
   }
-
-  h1 {
-    font-size: 26px;
-    line-height: 1.615;
-  }
+  .header-adress{
+    font-style: normal}
+ 
 }
 @media screen and (min-width: 1199px) {
   .hero-bg {
     height: 600px;
   }
+
 }

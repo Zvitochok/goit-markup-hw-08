@@ -118,7 +118,7 @@
 }
 @media screen and (max-width: 1199px) {
   .button-portfolio-list {
-    justify-content: left;
+    justify-content: center;
     padding: 0;
     flex-flow: wrap;
     li {
@@ -133,6 +133,7 @@
     flex-flow: wrap;
     justify-content: center;
     li{
+      height: auto;
       width: 100%;
       margin-bottom: 30px;
       margin-right: 0;
